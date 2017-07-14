@@ -1,45 +1,21 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Laravel</title>
+{{-- resources/views/admin/dashboard.blade.php --}}
 
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+@extends('adminlte::page')
 
-        <style>
-            html, body {
-                height: 100%;
-            }
+@section('title', 'Dashboard')
 
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
+@section('content_header')
+    <h1>Dashboard</h1>
+@stop
 
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
+@section('content')
+    <p>Welcome to this beautiful admin panel.</p>
+@stop
 
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
+@section('css')
+    <link rel="stylesheet" href="/css/admin_custom.css">
+@stop
 
-            .title {
-                font-size: 96px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">Laravel 5</div>
-            </div>
-        </div>
-    </body>
-</html>
+@section('js')
+    <script> console.log('Hi!'); </script>
+@stop
